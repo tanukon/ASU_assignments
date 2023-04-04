@@ -1,0 +1,6 @@
+#const n=3
+
+{in(X): vertex(X)} = n.
+
+% there must be an edge between the chosen vetices
+:- in(X), in(Y), X!=Y, not edge(X,Y), not edge(Y, X).
